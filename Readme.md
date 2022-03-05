@@ -29,12 +29,12 @@ Users should be able to:
 ### Screenshot
 
 ![](./images/ss1.png)
-
-
+![](./images/ss2.png)
+![](./images/ss3.png)
 ### Links
 
 - Solution URL: (https://github.com/juanitatime/3-column-preview-card-with-HTML-and-CSS.github.io)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://brave-jackson-2bcf4a.netlify.app/)
 
 ## My process
 
@@ -48,9 +48,9 @@ Users should be able to:
 
 ### What I learned
 
-I practiced using flexbox and looking at differences between using grid in creating the cards. I also learned how to add several breakpoints to create a responsive site. 
-
-I also made sure to begin with mobile-design first so I could get used to it. 
+- Practiced using flexbox and looking at differences between using grid in creating the cards. 
+- Learned how to add several breakpoints to create a responsive site. 
+- Made sure to begin with mobile-design first so I could get used to it. 
 
 
 ### Continued development
