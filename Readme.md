@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/juanitatime/3-column-preview-card-with-HTML-and-CSS.github.io)
-- Live Site URL: (https://brave-jackson-2bcf4a.netlify.app/)
+- Live Site URL: (https://pensive-noether-f07096.netlify.app)
 
 ## My process
 
