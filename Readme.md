@@ -27,7 +27,6 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
-
 ![](./images/ss1.png)
 ![](./images/ss2.png)
 ![](./images/ss3.png)
