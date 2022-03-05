@@ -14,63 +14,70 @@ Very dark cyan: 	#004241
 Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
 Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
 
-- Font size: 15px
-
-Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 */
+
+
+/* Desktop Breakpoint */
 
 * {
     background-color: #f2f2f2;
 }
+
 section {
     margin: 100px auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 1000px;
-    
 }
+
 #header {
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
     text-transform: uppercase;
-    color: 	#f2f2f2;
+    color: #f2f2f2;
 }
+
 p {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
     color: hsla(0, 0%, 100%, 0.75);
 }
+
 #flexbox {
     width: 500px;
     height: 520px;
-    
 }
+
 img {
     margin: 30px 0px 10px 40px;
     background-color: transparent;
 }
+
 .flexbox-1 {
     background-color: #e38826;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+
 .flexbox-1 h1 {
     font-size: 50px;
     background-color: #e38826;
     padding: 0px 0px 10px 40px;
 }
+
 .flexbox-1 p {
+    display: flex;
+    flex-direction: column;
     background-color: #e38826;
     padding: 0px 40px 50px 40px;
     line-height: 25px;
     width: 220px;
 }
+
 .flexbox-1 .btn-1 {
-    background-color: 	#f2f2f2;
+    background-color: #f2f2f2;
     color: #e38826;
     border: none;
     padding: 50px auto;
@@ -82,29 +89,34 @@ img {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
 }
+
 .flexbox-1 .btn-1:hover {
-    border: 1px solid 	#f2f2f2;
+    border: 1px solid #f2f2f2;
     background-color: transparent;
-    color: #f2f2f2;;
+    color: #f2f2f2;
+    cursor: pointer;
 }
 
 .flexbox-2 {
-    background-color: 	#006970;
+    background-color: #006970;
 }
+
 .flexbox-2 h1 {
     font-size: 50px;
-    background-color: 	#006970;
+    background-color: #006970;
     padding: 0px 0px 10px 40px;
 }
+
 .flexbox-2 p {
-    background-color: 	#006970;
+    background-color: #006970;
     padding: 0px 40px 50px 40px;
     line-height: 25px;
     width: 225px;
 }
+
 .flexbox-2 .btn-2 {
-    background-color:  	#f2f2f2;
-    color: 	#006970;
+    background-color: #f2f2f2;
+    color: #006970;
     border: none;
     padding: 50px auto;
     margin: 0px 30px;
@@ -115,10 +127,12 @@ img {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
 }
+
 .flexbox-2 .btn-2:hover {
-    border: 1px solid 	#f2f2f2;
+    border: 1px solid #f2f2f2;
     background-color: transparent;
-    color: #f2f2f2;;
+    color: #f2f2f2;
+    cursor: pointer;
 }
 
 .flexbox-3 {
@@ -126,20 +140,23 @@ img {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 .flexbox-3 h1 {
     font-size: 50px;
-    background-color:#004241;
+    background-color: #004241;
     padding: 0px 0px 10px 40px;
 }
+
 .flexbox-3 p {
     background-color: #004241;
     padding: 0px 40px 50px 40px;
     line-height: 25px;
     width: 230px;
 }
+
 .flexbox-3 .btn-3 {
-    background-color:  	#f2f2f2;
-    color:#004241;
+    background-color: #f2f2f2;
+    color: #004241;
     border: none;
     padding: 50px auto;
     margin: 0px 30px;
@@ -150,21 +167,30 @@ img {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
 }
+
 .flexbox-3 .btn-3:hover {
     border: 1px solid #f2f2f2;
     background-color: transparent;
-    color: 	#f2f2f2;
+    color: #f2f2f2;
+    cursor: pointer;
 }
+
 .attribution {
     font-size: 11px;
     text-align: center;
 }
 
 .attribution a {
-    color: 	#3e52a3;
+    color: #3e52a3;
     text-decoration: none;
 }
+
+/* Mobile Breakpoint */
+
 @media only screen and (max-width:375px) {
+    * {
+        max-width: 375px;
+    }
     section {
         margin: 30px auto;
         display: flex;
@@ -174,10 +200,9 @@ img {
         margin-left: 35px;
     }
     #flexbox {
-        margin: 0px 50px 0px 50px;
+        margin: 0px auto;
         width: 250px;
         height: 450px;
-        
     }
     .flexbox-1 {
         border-top-left-radius: 10px;
@@ -202,9 +227,10 @@ img {
         font-weight: 400;
     }
     .flexbox-1 .btn-1:hover {
-        border: 1px solid #f2f2f2;;
+        border: 1px solid #f2f2f2;
         background-color: transparent;
-        color: #f2f2f2;;
+        color: #f2f2f2;
+        cursor: pointer;
     }
     .flexbox-2 {
         width: 400px;
@@ -227,9 +253,10 @@ img {
         font-weight: 400;
     }
     .flexbox-2 .btn-2:hover {
-        border: 1px solid #f2f2f2;;
+        border: 1px solid #f2f2f2;
         background-color: transparent;
-        color: #f2f2f2;;
+        color: #f2f2f2;
+        cursor: pointer;
     }
     .flexbox-3 {
         border-top-right-radius: 0px;
@@ -255,11 +282,122 @@ img {
         font-weight: 400;
     }
     .flexbox-3 .btn-3:hover {
-        border: 1px solid #f2f2f2;;
+        border: 1px solid #f2f2f2;
         background-color: transparent;
-        color: #f2f2f2;;
+        color: #f2f2f2;
+        cursor: pointer;
     }
     .attribution {
         text-align: center;
     }
+}
+
+/* Tablet Breakpoint */
+
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+    * {
+        max-width: 768px;
+    }
+    section {
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        margin-left: 35px;
+    }
+    #flexbox {
+        margin: 0px auto;
+        width: 300px;
+        height: 450px;
+    }
+    .flexbox-1 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .flexbox-1 h1 {
+        padding: 0px 0px 0px 40px;
+    }
+    .flexbox-1 p {
+        font-size: 12px;
+        width: 190px;
+        margin-bottom: -10px;
+        line-height: 20px;
+    }
+    .flexbox-1 .btn-1 {
+        font-size: 12px;
+        margin: -100px 30px 20px 40px;
+        width: 120px;
+        height: 40px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+    }
+    .flexbox-1 .btn-1:hover {
+        border: 1px solid #f2f2f2;
+        background-color: transparent;
+        color: #f2f2f2;
+        cursor: pointer;
+    }
+    .flexbox-2 {
+        width: 400px;
+    }
+    .flexbox-2 h1 {
+        padding: 0px 0px 0px 40px;
+    }
+    .flexbox-2 p {
+        font-size: 12px;
+        width: 190px;
+        margin-bottom: -10px;
+        line-height: 20px;
+    }
+    .flexbox-2 .btn-2 {
+        font-size: 12px;
+        margin: -100px 30px 20px 40px;
+        width: 120px;
+        height: 40px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+    }
+    .flexbox-2 .btn-2:hover {
+        border: 1px solid #f2f2f2;
+        background-color: transparent;
+        color: #f2f2f2;
+        cursor: pointer;
+    }
+    .flexbox-3 {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 400px;
+    }
+    .flexbox-3 h1 {
+        padding: 0px 0px 0px 40px;
+    }
+    .flexbox-3 p {
+        font-size: 12px;
+        width: 190px;
+        margin-bottom: -10px;
+        line-height: 20px;
+    }
+    .flexbox-3 .btn-3 {
+        font-size: 12px;
+        margin: -100px 30px 20px 40px;
+        width: 120px;
+        height: 40px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+    }
+    .flexbox-3 .btn-3:hover {
+        border: 1px solid #f2f2f2;
+        background-color: transparent;
+        color: #f2f2f2;
+        cursor: pointer;
+    }
+    .attribution {
+        text-align: center;
+    }
+}
+
+
 }
