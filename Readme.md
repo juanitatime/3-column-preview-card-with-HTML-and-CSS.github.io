@@ -30,7 +30,7 @@ Users should be able to:
 
 ![](./images/ss1.png)
 ![](./images/ss2.png)
-
+![](./images/ss3.png)
 ### Links
 
 - Solution URL: (https://github.com/juanitatime/3-column-preview-card-with-HTML-and-CSS.github.io)
